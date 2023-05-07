@@ -1,6 +1,6 @@
 * {
-    color:#ffffff;
-    background-color:#1F2937;
+    color:#151D35;
+    background-color:#F3F4F4;
     font-family:Arial, Helvetica, sans-serif;
     
 }
@@ -15,12 +15,29 @@ body {
 
 /* navigation */
 
-header, nav, h2, ul{
+header {
+    margin-top:25px;
+}
+
+header, nav, img, ul{
     display:flex;
+    color:#8B9498;
     justify-content:space-between;
     
     
 }
+
+ul:hover {
+    color:#1682E7;
+    transition-duration: 0.25s;
+}
+
+header > img {
+    width:18%;
+    margin:auto 0;
+}
+
+/* latest research */
 
 section:nth-child(1) {
     display:flex;
@@ -32,13 +49,31 @@ section:nth-child(1) {
 section:nth-child(1) > div:nth-child(1){
     padding-right:50px;
     text-align:left;
-    text-overflow:ellipsis
+    text-overflow:ellipsis;
+    
+}
+
+section:nth-child(1) > div:nth-child(1) > p {
+    color:#8B9498;
 }
 
 section:nth-child(1) > div:nth-child(2) {
     width:50%;
-    height:250px;
-    background-color:grey;
+    height: 350px;
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    
+    
+    
+    
+}
+
+ection:nth-child(1) > div:nth-child(2) > img {
+    width:fit-content;
+    height:fit-content;
+    
+    
     
 }
 
@@ -48,30 +83,37 @@ section:nth-child(1) > div > h1 {
     
 }
 
-.sign-up {
+.read-me {
     font-size:16px;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:15px;
+    padding-bottom:15px;
     padding-left:25px;
     padding-right:25px;
-    border:0px solid;
-    background-color:lightskyblue;
+    border:1px solid #90A7AA;
     border-radius: 8px;
+    color:#90A7AA;
 }
-
+.read-me:hover {
+    transition-duration: 0.25s;
+    background-color:#90A7AA;
+    color:#F3F4F4;
+}
 
 /* information */
 
+
 section:nth-child(2) {
     margin-top:75px;
-    background-color:
+    background-color;
+    display:flex;
+    flex-direction:column;
+    
     
     
 }
 
 section:nth-child(2) > h1 {
     font-size:28px;
-    margin:0 auto;
     width: 100%;
     font-weight:bold;
     text-align:center;
@@ -85,15 +127,31 @@ section:nth-child(2) > .container {
 }
 
 section:nth-child(2) > .container > div {
-    /*TODO*/
+    
 }
 
 .placeholder {
     display:flex;
-    width:150px;
-    height:150px;
+    width:250px;
+    height:250px;
     border-radius:8px;
     background-color:lightblue;
+    
+}
+
+.placeholder:hover {
+    width:280px;
+    height:280px;
+    transition-duration:.25s;
+
+}
+
+.placeholder > video {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:8px;
+    
     
 }
 
@@ -107,7 +165,6 @@ section:nth-child(3){
 
 section:nth-child(3) > p:nth-child(1) {
     font-size:36px;
-    font-style: italic;
     text-align:left;
     margin-left:10%;
     margin-right:3%;
@@ -115,8 +172,6 @@ section:nth-child(3) > p:nth-child(1) {
 
 section:nth-child(3) > p:nth-child(2) {
     font-size:36px;
-    font-style: italic;
-    text-align:right;
     
 }
 
@@ -124,12 +179,14 @@ section:nth-child(3) > p:nth-child(2) {
 
 section:nth-child(4) {
     display:flex;
+    flex-direction:row;
     justify-content: space-around;
     background-color:#3882F6;
     border-radius:8px;
     padding-top:20px;
     padding-bottom:20px;
-    margin-bottom:100px;
+    margin-bottom:100px;y
+
 
 
 }
