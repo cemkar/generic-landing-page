@@ -12,7 +12,8 @@ body {
     
 }
 
-/* Navigation */
+
+/* navigation */
 
 header, nav, h2, ul{
     display:flex;
@@ -25,7 +26,7 @@ section:nth-child(1) {
     display:flex;
     justify-content:space-between;
     margin-top:75px;
-    border:red 1px solid;
+    
 }
 
 section:nth-child(1) > div:nth-child(1){
@@ -43,7 +44,7 @@ section:nth-child(1) > div:nth-child(2) {
 
 section:nth-child(1) > div > h1 {
     font-size:36px;
-    border:red 1px solid;
+   
     
 }
 
@@ -51,14 +52,15 @@ section:nth-child(1) > div > h1 {
     font-size:16px;
     padding-top:5px;
     padding-bottom:5px;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:25px;
+    padding-right:25px;
     border:0px solid;
     background-color:lightskyblue;
     border-radius: 8px;
 }
 
-/* Information */
+
+/* information */
 
 section:nth-child(2) {
     margin-top:75px;
@@ -71,6 +73,7 @@ section:nth-child(2) > h1 {
     font-size:28px;
     margin:0 auto;
     width: 100%;
+    font-weight:bold;
     text-align:center;
     
 }
@@ -79,11 +82,10 @@ section:nth-child(2) > .container {
     margin-top:50px;
     display:flex;
     justify-content:space-evenly;
-    border:red 1px solid;
 }
 
 section:nth-child(2) > .container > div {
-    border:red 1px solid;
+    /*TODO*/
 }
 
 .placeholder {
@@ -94,5 +96,66 @@ section:nth-child(2) > .container > div {
     background-color:lightblue;
     
 }
+
+
+/* testimony */
+
+section:nth-child(3){
+    margin-top:200px;
+    margin-bottom:200px;
+}
+
+section:nth-child(3) > p:nth-child(1) {
+    font-size:36px;
+    font-style: italic;
+    text-align:left;
+    margin-left:10%;
+    margin-right:3%;
+}
+
+section:nth-child(3) > p:nth-child(2) {
+    font-size:36px;
+    font-style: italic;
+    text-align:right;
+    
+}
+
+/* call to action */
+
+section:nth-child(4) {
+    display:flex;
+    justify-content: space-around;
+    background-color:#3882F6;
+    border-radius:8px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:100px;
+
+
+}
+
+.call-to-action, .call-to-action > h3, .call-to-action > p {
+    background-color:#3882F6;
+
+}
+
+section:nth-child(4) > button {
+    padding-left:50px;
+    padding-right:50px;
+    height:50px;
+    margin:auto 0;
+}
+
+/* footer */
+
+footer {
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:12px;
+    text-align:center;
+
+}
+
+
 
 
